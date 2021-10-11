@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/Proyecto_Fada.dir/main.cpp.o -o Proyecto_Fada 

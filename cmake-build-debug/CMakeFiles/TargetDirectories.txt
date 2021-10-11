@@ -1,0 +1,3 @@
+/home/jose/valle/sexto/FADA/Proyecto Fada/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/jose/valle/sexto/FADA/Proyecto Fada/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/jose/valle/sexto/FADA/Proyecto Fada/cmake-build-debug/CMakeFiles/Proyecto_Fada.dir
