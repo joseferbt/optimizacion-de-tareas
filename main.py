@@ -10,34 +10,7 @@ for x in range(n):
 # for x in range(n):
 #     print(matriz[x][0]," ",matriz[x][1]," ",matriz[x][2])
 
-def countSort(arr):
-    output = [["","",""] for x in range(n)]
-    count = [0 for i in range(horasDisponibles)]
-    ans= [["","",""] for x in range(n)]
-    for i in arr:
-        count[int(i[2])] += 1
-    for i in range(24):
-        count[i] += count[i - 1]
-    for i in range(n):
-        output[count[int(arr[i][2])] - 1] = arr[i]
-        count[int(arr[i][2])] -= 1
-    for i in range(len(arr)):
-        ans[i] = output[i]
-    return ans
-
-matriz = countSort(matriz)
-
-def printAns(ans):
-    aux =0
-    for x in ans:
-        aux+= int(x[2])-int(x[1])
-    outFile.write(str(len(ans)))
-    outFile.write("\n"+str(aux))
-    for x in ans:
-        outFile.write("\n"+x[0])
-
-def beneficio(arr):
-    return int(arr[2])-int(arr[1])
+matriz = countSort(matriz,horasDisponibles,n)
 
 def selActi_1(n, arr):
     ben =[[0 for x in range(horasDisponibles+1)] for x in range(n+1)]
@@ -52,9 +25,22 @@ def selActi_1(n, arr):
                 sol[i][c] = 1
     return sol
 
+def solActi_1(arr,n,c,mat):
+    matriz=[]
+    if n == 0 :
+        print()
+    else:
+        if arr[n][c]==1:
+            solActi_1(arr,n-1,c-beneficio(mat[n-1]),mat)
+            matriz.append(mat[n-1])
+        else:
+            solActi_1(arr,n-1,c,mat)
+    return matriz
 
-printAns(matriz)
-mostrar(selActi_1(4,matriz))
+
+# solActi_1(selActi_1(n,matriz),n,horasDisponibles)
+printAns(solActi_1(selActi_1(n,matriz),n,horasDisponibles,matriz),outFile)
+#mostrar(selActi_1(4,matriz))
 # for x in range(n):
 #     print(matriz[x][0]," ",matriz[x][1]," ",matriz[x][2])
 
