@@ -16,16 +16,16 @@ def printAns(ans,file):
 def beneficio(arr):
     return int(arr[2])-int(arr[1])
 def countSort(arr,horasD,n):
-    output = [["","",""] for x in range(n)]
-    count = [0 for i in range(horasD)]
-    ans= [["","",""] for x in range(n)]
+    output = [["","",""] for a in range(n)]
+    count = [0 for b in range(horasD+1)]
+    ans= [["","",""] for c in range(n)]
     for i in arr:
         count[int(i[2])] += 1
-    for i in range(horasD):
-        count[i] += count[i - 1]
-    for i in range(n):
-        output[count[int(arr[i][2])] - 1] = arr[i]
-        count[int(arr[i][2])] -= 1
-    for i in range(len(arr)):
-        ans[i] = output[i]
+    for x in range(1,horasD+1):
+        count[x] += count[x - 1]
+    for y in range(n):
+        output[count[int(arr[y][2])] - 1] = arr[y]
+        count[int(arr[y][2])] -= 1
+    for z in range(len(arr)):
+        ans[z] = output[z]
     return ans
