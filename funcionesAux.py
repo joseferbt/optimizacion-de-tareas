@@ -29,3 +29,42 @@ def countSort(arr,horasD,n):
     for z in range(len(arr)):
         ans[z] = output[z]
     return ans
+def entre(ar,gl):
+    return (False,True)[(ar[1] <= gl[1]) and (gl[1] < ar[2])]
+def ingresa(arr,inter,newinter):
+    l = len(inter)-1
+    aux = bool
+    count = 0
+    if l ==-1:
+        return [False,inter]
+    else:
+        if arr[1]>=inter[l][0]and arr[2]<=inter[l][1]:
+            if inter[l][0]==arr[1] and inter[l][1]==arr[2]:
+                newinter.append(inter[l])
+                return True
+            else: [4,7]  [5,7]
+                if not inter[l][0]==arr[1]:
+                    newinter.append([inter[l][0],arr[1]])
+                else:
+                    newinter.append([arr[2],inter[1]])
+
+                if not inter[l][1]==arr[2]:
+                    newinter.append([arr[2],inter[l][1]])
+                else:
+                    newinter.append([inter[l][0],arr[1]])
+            return True
+        else:
+            newinter.append(inter.pop())
+            return ingresa(arr,inter,newinter)
+
+
+"""intervalo=[ x for x in range(0,24) ]
+def ingresados(arr,  newinter):
+    if (arr[1] in intervalo) and (arr[2] in intervalo):
+            for y in range (arr[1],arr[2] ):
+                newinter.pop(y)
+            return True
+    else:
+        return False
+"""
+
