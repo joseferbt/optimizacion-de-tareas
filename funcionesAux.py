@@ -36,25 +36,35 @@ def ingresa(arr,inter,newinter):
     aux = bool
     count = 0
     if l ==-1:
-        return [False,inter]
+        return False
     else:
-        if arr[1]>=inter[l][0]and arr[2]<=inter[l][1]:
-            if inter[l][0]==arr[1] and inter[l][1]==arr[2]:
-                newinter.append(inter[l])
+        if int(arr[1])>=inter[l][0]and int(arr[2])<=inter[l][1]:
+            if inter[l][0]==int(arr[1]) and inter[l][1]==int(arr[2]):
+                inter.pop()
+                newinter.append(inter)
                 return True
-            else: [4,7]  [5,7]
-                if not inter[l][0]==arr[1]:
-                    newinter.append([inter[l][0],arr[1]])
-                else:
-                    newinter.append([arr[2],inter[1]])
-
-                if not inter[l][1]==arr[2]:
-                    newinter.append([arr[2],inter[l][1]])
-                else:
-                    newinter.append([inter[l][0],arr[1]])
+            else:
+                if inter[l][0]==int(arr[1]) and inter[l][1]>int(arr[2]):
+                    print([int(arr[2]),inter[l][1]],"here")
+                    newinter.append([int(arr[2]),inter[l][1]])
+                    print(newinter,"[5]")
+                elif inter[l][0]<int(arr[1]) and inter[l][1]>int(arr[2]):
+                    newinter.append([inter[l][0], int(arr[1])])
+                    newinter.append([int(arr[2]), inter[l][1]])
+                elif inter[l][0]<int(arr[1]) and inter[l][1]==int(arr[2]):
+                    newinter.append([inter[l][0], int(arr[1])])
+            inter.pop()
+            print(inter,"[2]")
+            for x in range(l):
+                # print(x,"[1]")
+                newinter.append(inter[x])
+            print(newinter,"[6]")
             return True
         else:
+            print(newinter,"[4]")
             newinter.append(inter.pop())
+            print(newinter,"[3]")
+            print(inter, [0])
             return ingresa(arr,inter,newinter)
 
 

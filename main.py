@@ -41,9 +41,7 @@ def solActi_1(arr, n, c, mat, aux):
             solActi_1(arr, n - 1, c, mat, aux)
     return aux
 mataux = []
-print(ingresa(["1",5,7],[[1,4],[4,7]],mataux))
-
-print(mataux)
+inter = [[0,24]]
 
 
 # printAns(solActi_1(selActi_1(n, matriz), n, horasDisponibles, matriz, mataux), outFile)
