@@ -12,7 +12,7 @@ def voraz(arr):
             concat.append(x)
             inicio=x[2]
     return concat 
-
+itera
 """def main():
     lista=[["a",1,2],["b",1,4],["m",2,5],["c",1,5],["h",6,7],["s",9,10],["s",9,11],["r",12,22]]
     print(voraz(lista))

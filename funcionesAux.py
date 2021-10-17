@@ -59,9 +59,6 @@ def ingresa(arr, iter, newinter):
             inter.pop()
             for x in range(l):
                 newinter.append(inter[x])
-            # print(newinter,"[X]")
-            inter = newinter
-            # print(inter,"[Y]")
             return True
         else:
             newinter.append(inter.pop())
@@ -96,12 +93,4 @@ def mergeSort(array):
             j += 1
             k += 1
 
-"""intervalo=[ x for x in range(0,24) ]
-def ingresados(arr,  newinter):
-    if (arr[1] in intervalo) and (arr[2] in intervalo):
-            for y in range (arr[1],arr[2] ):
-                newinter.pop(y)
-            return True
-    else:
-        return False
-"""
+
