@@ -67,7 +67,32 @@ def newbeneficio(intervalos):
     count =0
     for i in intervalos:
         count += i[1]-i[0]
-    return count
+    return 24-count
+def mergeSort(array):
+    if len(array) > 1:
+        r = len(array)//2
+        L = array[:r]
+        M = array[r:]
+        mergeSort(L)
+        mergeSort(M)
+        i = j = k = 0
+        while i < len(L) and j < len(M):
+            if L[i][2] < M[j][2]:
+                array[k] = L[i]
+                i += 1
+            else:
+                array[k] = M[j]
+                j += 1
+            k += 1
+        while i < len(L):
+            array[k] = L[i]
+            i += 1
+            k += 1
+        while j < len(M):
+            array[k] = M[j]
+            j += 1
+            k += 1
+
 """intervalo=[ x for x in range(0,24) ]
 def ingresados(arr,  newinter):
     if (arr[1] in intervalo) and (arr[2] in intervalo):

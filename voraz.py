@@ -1,4 +1,4 @@
-from ordenar import *
+from funcionesAux import *
 
 
 def voraz(arr):
