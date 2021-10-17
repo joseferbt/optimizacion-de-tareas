@@ -39,7 +39,8 @@ def entre(ar, gl):
     return (False, True)[(ar[1] <= gl[1]) and (gl[1] < ar[2])]
 
 
-def ingresa(arr, inter, newinter):
+def ingresa(arr, iter, newinter):
+    inter = iter
     l = len(inter) - 1
     if l == -1:
         return False
@@ -58,7 +59,9 @@ def ingresa(arr, inter, newinter):
             inter.pop()
             for x in range(l):
                 newinter.append(inter[x])
-            print(newinter,"[X]")
+            # print(newinter,"[X]")
+            inter = newinter
+            # print(inter,"[Y]")
             return True
         else:
             newinter.append(inter.pop())
