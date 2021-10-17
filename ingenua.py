@@ -9,8 +9,8 @@ def sobreponen(arr=list):
     auxno=[]
     ya_anadido=False
     aux_inicio=0
-    for x in range(0,len(arr)):
-        if arr[x][2]>rango_ocupado and arr[x][1]>=rango_ocupado:
+    for x in range(len(arr)):
+        if  arr[x][1]>=rango_ocupado:
             rango_ocupado=arr[x][2]
             if ya_anadido:
                 aux.append(arr[aux_inicio:x])

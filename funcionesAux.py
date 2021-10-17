@@ -68,12 +68,9 @@ def newbeneficio(intervalos):
     for i in intervalos:
         count += i[1]-i[0]
     return count
-"""intervalo=[ x for x in range(0,24) ]
-def ingresados(arr,  newinter):
-    if (arr[1] in intervalo) and (arr[2] in intervalo):
-            for y in range (arr[1],arr[2] ):
-                newinter.pop(y)
-            return True
-    else:
-        return False
-"""
+def filtardatos(arr):
+    new = []
+    for i in arr:
+        new.append([i[0],int(i[1]),int(i[2])])
+    arr = new
+    return arr
