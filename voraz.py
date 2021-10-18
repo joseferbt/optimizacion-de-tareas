@@ -1,7 +1,7 @@
 from funcionesAux import *
 
 
-def voraz(arr):
+def vorazP2(arr):
     aux=arr
     mergeSort(aux,2)# algoritmo de ordenamiento
     concat=[]

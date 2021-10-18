@@ -1,4 +1,4 @@
-from ordenar import *
+from funcionesAux import *
 # se implementa la solución dinamica 
 
 #sort(arr)-> arr
@@ -17,7 +17,7 @@ def sobreponen(arr=list):
                 ya_anadido = False
             rango_ocupado = arr[x][2]
         else:
-            rango_ocupado=arr[x][2]
+            rango_ocupado = arr[x][2]
             if not ya_anadido:
                 aux_inicio = x - 1
                 ya_anadido = True
@@ -58,7 +58,7 @@ def factibles(arr=list):
             fac.append(x)
     return fac
 
-def mejor_factible(arr):
+def mejor_factibleP2(arr):
     aux_obj=list()
     aux=0
     for x in arr: 
@@ -67,10 +67,21 @@ def mejor_factible(arr):
             aux_obj=x
     return aux_obj
 
+def mejor_factibleP1(arr):
+    aux_obj=list()
+    aux=0
+    for x in arr:
+        count=0
+        for y in x:
+            count+=y[2]-y[1]
+        if count>=aux:
+            aux=count
+            aux_obj=x
+    return aux_obj
 
-def solucion_ingenua(arr):
+def solucion_ingenuaP2(arr):
     arry=arr
-    mergeSort(arry)
+    mergeSort(arry,2)
     sobrepo=sobreponen(arry)
     sp=sobrepo[0]
     #colocar los que no sobreponen
@@ -78,11 +89,23 @@ def solucion_ingenua(arr):
     for aux in sp:
         ing=ingenua(aux)
         facti=factibles(ing)
-        mfacti=list(mejor_factible(facti))
+        mfacti=list(mejor_factibleP2(facti))
         solu= solu + mfacti
     return solu
-    
 
+def solucion_ingenuaP1(arr):
+    arry=arr
+    mergeSort(arry,2)
+    sobrepo=sobreponen(arry)
+    sp=sobrepo[0]
+    #colocar los que no sobreponen
+    solu=sobrepo[1]
+    for aux in sp:
+        ing=ingenua(aux)
+        facti=factibles(ing)
+        mfacti=list(mejor_factibleP1(facti))
+        solu= solu + mfacti
+    return solu
 #funcion main
 def main():
     print(sobreponen([['a', 0, 1], ['b', 1, 4], ["x", 0, 5],['m', 2, 5], ['c', 1, 5],[6,6,7],[7,6,8],[1,9,10]]))   # [[[['a', 1, 2], ['b', 1, 4], ['x', 0, 5], ['m', 2, 5]]], [['c', 1, 5]]]
