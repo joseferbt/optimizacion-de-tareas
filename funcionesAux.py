@@ -68,29 +68,41 @@ def newbeneficio(intervalos):
     for i in intervalos:
         count += i[1]-i[0]
     return 24-count
-def mergeSort(array):
+
+def mergeSort(array,sol, comp):
     if len(array) > 1:
         r = len(array)//2
         L = array[:r]
         M = array[r:]
-        mergeSort(L)
-        mergeSort(M)
+        mergeSort(L,sol,comp)
+        mergeSort(M,sol,comp)
         i = j = k = 0
-        while i < len(L) and j < len(M):
-            if L[i][2] < M[j][2]:
+        while comp(i,len(L)) and comp(j,len(M)):
+            if comp(L[i][sol], M[j][sol]):
                 array[k] = L[i]
                 i += 1
             else:
                 array[k] = M[j]
                 j += 1
             k += 1
-        while i < len(L):
+        while comp(i,len(L)):
             array[k] = L[i]
             i += 1
             k += 1
-        while j < len(M):
+        while comp(j,len(M)):
             array[k] = M[j]
             j += 1
             k += 1
 
-
+def filtardatos(arr):
+    new = []
+    for i in arr:
+        new.append([i[0],int(i[1]),int(i[2])])
+    arr = new
+    return arr
+def filtarTam(arr):
+    new = []
+    for i in arr:
+        new.append([i[0],int(i[1]),int(i[2]),int(i[2])-int(i[1])])
+    arr = new
+    return arr
