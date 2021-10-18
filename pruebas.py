@@ -3,7 +3,7 @@ import sys
 from  ingenua import *
 from voraz import * 
 
-num=int(sys.argv[1])
+num= 5
 
 def crearEntrada(n):
     salida=[]
@@ -13,11 +13,13 @@ def crearEntrada(n):
         salida.append([":c",hora_inicio,hora_final])
     return salida
 
-def main():
-    entrada=crearEntrada(num)
-    print(vorazP2(entrada))
+def test():
 
-main()
+    entrada=crearEntrada(num)
+    print(entrada,"[x]")
+    print(vorazP2([[':c', 17, 23], [':c', 6, 17], [':c', 1, 3], [':c', 16, 18], [':c', 6, 16]]))
+
+test()
 
 
 
