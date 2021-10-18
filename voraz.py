@@ -3,7 +3,7 @@ from funcionesAux import *
 
 def voraz(arr):
     aux=arr
-    mergeSort(aux)# algoritmo de ordenamiento
+    mergeSort(aux,2)# algoritmo de ordenamiento
     concat=[]
     inicio=0
     for x in aux:
@@ -15,8 +15,9 @@ def voraz(arr):
 
 def vorazP1(arr,n):
     aux=arr
-    mergeSort(aux,3,lambda x,y:x<y)# algoritmo de ordenamiento
+    mergeSort(aux,3)# algoritmo de ordenamiento
     aux = aux[::-1]
+    print(aux)
     concat=[]
     intervalo = [[0,24]]
     inicio=0

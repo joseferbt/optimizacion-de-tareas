@@ -36,7 +36,7 @@ def countSort(arr, horasD, n):
 
 
 def entre(ar, gl):
-    return (False, True)[(ar[1] <= gl[1]) and (gl[1] < ar[2])]
+    return (gl, ar)[(ar[1]<gl[2]) and (gl[2] <= ar[2])]
 
 
 def ingresa(arr, iter, newinter):
@@ -59,6 +59,7 @@ def ingresa(arr, iter, newinter):
             inter.pop()
             for x in range(l):
                 newinter.append(inter[x])
+
             return True
         else:
             newinter.append(inter.pop())
@@ -69,27 +70,27 @@ def newbeneficio(intervalos):
         count += i[1]-i[0]
     return 24-count
 
-def mergeSort(array,sol, comp):
+def mergeSort(array,sol):
     if len(array) > 1:
         r = len(array)//2
         L = array[:r]
         M = array[r:]
-        mergeSort(L,sol,comp)
-        mergeSort(M,sol,comp)
+        mergeSort(L,sol)
+        mergeSort(M,sol)
         i = j = k = 0
-        while comp(i,len(L)) and comp(j,len(M)):
-            if comp(L[i][sol], M[j][sol]):
+        while i<len(L) and j<len(M):
+            if L[i][sol]<M[j][sol]:
                 array[k] = L[i]
                 i += 1
             else:
                 array[k] = M[j]
                 j += 1
             k += 1
-        while comp(i,len(L)):
+        while i<len(L):
             array[k] = L[i]
             i += 1
             k += 1
-        while comp(j,len(M)):
+        while j<len(M):
             array[k] = M[j]
             j += 1
             k += 1
@@ -106,3 +107,19 @@ def filtarTam(arr):
         new.append([i[0],int(i[1]),int(i[2]),int(i[2])-int(i[1])])
     arr = new
     return arr
+def sobrepon(ar,n,enlazados):
+    aux = [[i[0],i[1],i[2]] for i in ar]
+    if n == 2:
+        return ar[0]
+    else :
+        arn = aux[n - 1]
+        aux.pop()
+        enlazados.append(entre(arn,sobrepon(aux,n-1,enlazados)))
+"""
+aux=[]
+prueba =[['a', 1, 2], ['b', 1, 4],['m', 2, 5], ['c', 1, 5],[6,6,7]]
+print(sobrepon(prueba,len(prueba),aux))
+print(aux)
+"""
+
+
