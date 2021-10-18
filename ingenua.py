@@ -35,7 +35,7 @@ def sobreponen(arr=list):
 def ingenua(arr=list):
     solucion=[]
     import itertools
-    for L in range(0, len(arr)+1):
+    for L in range(1,len(arr)+1):
         for subset in itertools.combinations(arr, L):
            solucion.append(subset) 
     return solucion

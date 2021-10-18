@@ -3,7 +3,8 @@ from funcionesAux import *
 # solucion al caso concreto 2 por medio de un algoritmo voraz
 def vorazP2(arr):
     aux=arr
-    mergeSort(aux,2)# algoritmo de ordenamiento
+    countSort(aux,24,len(aux))
+    # mergeSort(aux)# algoritmo de ordenamiento
     concat=[]
     inicio=0
     for x in aux:
