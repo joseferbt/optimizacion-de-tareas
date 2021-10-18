@@ -38,7 +38,7 @@ def ingenua(arr=list):
     for L in range(0, len(arr)+1):
         for subset in itertools.combinations(arr, L):
            solucion.append(subset) 
-    return solucion
+    return solucion 
 
 #arr[arr]->arr[arr]
 #filtra las soluciones factibles
@@ -109,11 +109,8 @@ def solucion_ingenuaP1(arr):
 #funcion main
 def main():
     print(sobreponen([['a', 0, 1], ['b', 1, 4], ["x", 0, 5],['m', 2, 5], ['c', 1, 5],[6,6,7],[7,6,8],[1,9,10]]))   # [[[['a', 1, 2], ['b', 1, 4], ['x', 0, 5], ['m', 2, 5]]], [['c', 1, 5]]]
-    lista=[["a",20,22],["b",11,14],["m",12,19],["c",0,5],["h",6,9],["a",1,2],
-           ["b",1,4],["m",2,5],["c",1,5],["h",6,7],
-           ["s",9,10],["s",9,11],["r",12,22]]
+    lista=[["a",20,22],["b",11,14],["m",12,19],["c",0,5],["h",6,9],["a",1,2], ["b",1,4],["m",2,5],["c",1,5],["h",6,7],["s",9,10],["s",9,11],["r",12,22]]
     a = [['a', 0, 1], ['b', 1, 4], ["x", 0, 5],['m', 2, 5], ['c', 1, 5],[6,6,7],[7,6,8],[1,9,10]]
-    print(a)
     print(solucion_ingenuaP1(filtarTam(a)))
 main()
 
