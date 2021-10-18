@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1c3ba12b-cf72-42c8-a6b6-87d77458dcdc" name="Changes" comment="ingenua y voraz">
+    <list default="true" id="1c3ba12b-cf72-42c8-a6b6-87d77458dcdc" name="Changes" comment="seleccion funcionando">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/funcionesAux.py" beforeDir="false" afterPath="$PROJECT_DIR$/funcionesAux.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/voraz.py" beforeDir="false" afterPath="$PROJECT_DIR$/voraz.py" afterDir="false" />
@@ -195,7 +195,7 @@
       <workItem from="1634406842558" duration="7912000" />
       <workItem from="1634418071009" duration="608000" />
       <workItem from="1634479317176" duration="20457000" />
-      <workItem from="1634564531155" duration="3170000" />
+      <workItem from="1634564531155" duration="6893000" />
     </task>
     <task id="LOCAL-00001" summary="cambio a Python">
       <created>1634263081264</created>
@@ -260,7 +260,14 @@
       <option name="project" value="LOCAL" />
       <updated>1634531117728</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="seleccion funcionando">
+      <created>1634570052300</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1634570052300</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -299,13 +306,14 @@
     <MESSAGE value="ingenua y voraz (1)" />
     <MESSAGE value="ingenua y voraz" />
     <MESSAGE value="Changes by hussky" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changes by hussky" />
+    <MESSAGE value="seleccion funcionando" />
+    <option name="LAST_COMMIT_MESSAGE" value="seleccion funcionando" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Proyecto_Fada$voraz.coverage" NAME="voraz Coverage Results" MODIFIED="1634525036142" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Proyecto_Fada$ing.coverage" NAME="ing Coverage Results" MODIFIED="1634567032930" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Proyecto_Fada$ingenua.coverage" NAME="ingenua Coverage Results" MODIFIED="1634530325203" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Proyecto_Fada$main.coverage" NAME="main Coverage Results" MODIFIED="1634514602689" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Proyecto_Fada$funcionesAux.coverage" NAME="funcionesAux Coverage Results" MODIFIED="1634569064653" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Proyecto_Fada$funcionesAux.coverage" NAME="funcionesAux Coverage Results" MODIFIED="1634575895720" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

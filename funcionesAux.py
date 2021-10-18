@@ -43,9 +43,12 @@ def ingresa(arr, iter, newinter):
     inter = iter
     l = len(inter) - 1
     if l == -1:
+        print(newinter)
         return False
     else:
+        print(int(arr[1]), inter[l][0] , int(arr[2]) , inter[l][1])
         if int(arr[1]) >= inter[l][0] and int(arr[2]) <= inter[l][1]:
+            print("[x]")
             if inter[l][0] == int(arr[1]) and inter[l][1] == int(arr[2]):
                 print()
             else:
@@ -58,6 +61,7 @@ def ingresa(arr, iter, newinter):
                     newinter.append([inter[l][0], int(arr[1])])
             inter.pop()
             for x in range(l):
+                print(x,"[Q]")
                 newinter.append(inter[x])
 
             return True
@@ -117,26 +121,24 @@ def sobrepon(ar, n, enlazados, ans, estado):
         aux.pop()
         if  entre(arn, arn_1):
             estado = True
-            print( arn, arn_1, "[x]")
             enlazados.append(arn)
         else :
             if estado:
-                print(enlazados[-1], arn, arn_1, "[y]")
                 enlazados.append(arn)
                 estado = False
             else :
                 ans.append(arn)
-        print(estado)
         sobrepon(aux,n-1,enlazados,ans,estado)
 
 aux=[]
 new=[]
 prueba =[[0,0,1],['1', 1, 2], ['2', 1, 4],['3', 2, 5], ['4', 1, 5],[5,6,8],[6,7,9],[7,9,10],[8,12,15],[9,14,15],[10,15,18],[10,18,20],[11,19,21]]
 sobrepon(prueba,len(prueba),aux,new,0)
+print(new)
+print(ingresa([10,"16","17"],new,[]))
 aux.reverse()
 new.reverse()
-print(aux)
-print(new)
+
 
 
 

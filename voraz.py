@@ -19,9 +19,7 @@ def vorazP1(arr,n):
     aux = aux[::-1]
     print(aux)
     concat=[]
-    intervalo = [[0,24]]
-    inicio=0
-    tiempoDisponible=n
+    intervalo = [[0,n]]
     for x in aux:
         iaux = [[x[0],x[1]] for x in intervalo]
         interaux = []
