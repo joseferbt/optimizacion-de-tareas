@@ -127,6 +127,30 @@ def sobrepon(ar, n, enlazados, ans, estado):
             else :
                 ans.append(arn)
         sobrepon(aux,n-1,enlazados,ans,estado)
+def imprimir(ax,ay):
+    plt.plot(ax,ay,'o')
+    plt.xlabel("Tamaño de la entrada")
+    plt.ylabel("Tiempo de respuesta")
+    plt.show()
+
+def test(ax,ay,algoritmo):
+    for n in range(100,100000,1000):
+        entrada=crearEntrada(n)
+        # print(entrada,"[x]")
+        start = time()
+        algoritmo
+        fin = time()
+        result= fin- start
+        # ax.append([n,float(" %.10f " % result)])
+        ax.append(n)
+        ay.append(float(" %.10f " % result))
+def crearEntrada(n):
+    salida=[]
+    for x in range(0,n):
+        hora_final=random.randint(1,24)
+        hora_inicio=random.randint(0,hora_final-1)
+        salida.append([":c",hora_inicio,hora_final])
+    return salida
 
 # aux=[]
 # new=[]

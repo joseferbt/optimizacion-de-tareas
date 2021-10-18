@@ -4,12 +4,10 @@ from funcionesAux import *
 def vorazP2(arr):
     aux=arr
     aux = countSort(aux,24,len(aux))
-    print(aux)
     # mergeSort(aux)# algoritmo de ordenamiento
     concat=[]
     inicio=0
     for x in aux:
-        print(x,inicio)
         if x[1]>=inicio:
             concat.append(x)
             inicio=x[2]
