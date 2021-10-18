@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1c3ba12b-cf72-42c8-a6b6-87d77458dcdc" name="Changes" comment="pre merge">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="1c3ba12b-cf72-42c8-a6b6-87d77458dcdc" name="Changes" comment="ingenua y voraz (1)">
       <change beforePath="$PROJECT_DIR$/funcionesAux.py" beforeDir="false" afterPath="$PROJECT_DIR$/funcionesAux.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ingenua.py" beforeDir="false" afterPath="$PROJECT_DIR$/ingenua.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/voraz.py" beforeDir="false" afterPath="$PROJECT_DIR$/voraz.py" afterDir="false" />
     </list>
     <list id="87ac8a25-00fd-4390-9f48-8dcf64001783" name="Changes by hussky" comment="">
       <change beforePath="$PROJECT_DIR$/ingenua.py" beforeDir="false" afterPath="$PROJECT_DIR$/ingenua.py" afterDir="false" />
@@ -63,14 +61,6 @@
         <range start1="84" end1="84" start2="118" end2="119" changelist="1c3ba12b-cf72-42c8-a6b6-87d77458dcdc" />
       </ranges>
     </file>
-    <file path="$PROJECT_DIR$/voraz.py">
-      <ranges>
-        <range start1="3" end1="4" start2="3" end2="4" changelist="87ac8a25-00fd-4390-9f48-8dcf64001783" />
-        <range start1="5" end1="6" start2="5" end2="6" changelist="1c3ba12b-cf72-42c8-a6b6-87d77458dcdc" />
-        <range start1="17" end1="18" start2="17" end2="18" changelist="1c3ba12b-cf72-42c8-a6b6-87d77458dcdc" />
-        <range start1="19" end1="19" start2="19" end2="20" changelist="1c3ba12b-cf72-42c8-a6b6-87d77458dcdc" />
-      </ranges>
-    </file>
   </component>
   <component name="ProjectId" id="1zWNBwRlqKG56oKbWnbU9qE7jaT" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -91,7 +81,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.ingenua">
+  <component name="RunManager" selected="Python.funcionesAux">
     <configuration name="funcionesAux" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Proyecto Fada" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -182,8 +172,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.ingenua" />
         <item itemvalue="Python.funcionesAux" />
+        <item itemvalue="Python.ingenua" />
         <item itemvalue="Python.voraz" />
       </list>
     </recent_temporary>
@@ -254,7 +244,14 @@
       <option name="project" value="LOCAL" />
       <updated>1634519300003</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="ingenua y voraz (1)">
+      <created>1634530515182</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1634530515182</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -271,7 +268,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/agg_voraz2" />
+                        <option value="main" />
                       </list>
                     </value>
                   </entry>
@@ -290,12 +287,13 @@
     <MESSAGE value="prueba de ingresa()" />
     <MESSAGE value="correccion ingresa()" />
     <MESSAGE value="pre merge" />
-    <option name="LAST_COMMIT_MESSAGE" value="pre merge" />
+    <MESSAGE value="ingenua y voraz (1)" />
+    <option name="LAST_COMMIT_MESSAGE" value="ingenua y voraz (1)" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Proyecto_Fada$voraz.coverage" NAME="voraz Coverage Results" MODIFIED="1634525036142" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Proyecto_Fada$ingenua.coverage" NAME="ingenua Coverage Results" MODIFIED="1634530325203" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Proyecto_Fada$main.coverage" NAME="main Coverage Results" MODIFIED="1634514602689" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Proyecto_Fada$funcionesAux.coverage" NAME="funcionesAux Coverage Results" MODIFIED="1634529409559" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Proyecto_Fada$funcionesAux.coverage" NAME="funcionesAux Coverage Results" MODIFIED="1634530863193" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

@@ -36,7 +36,7 @@ def countSort(arr, horasD, n):
 
 
 def entre(ar, gl):
-    return (gl, ar)[(ar[1]<gl[2]) and (gl[2] <= ar[2])]
+    return (False, True)[(ar[1]<gl[2]) and (gl[2] <= ar[2])]
 
 
 def ingresa(arr, iter, newinter):
@@ -109,12 +109,21 @@ def filtarTam(arr):
     return arr
 def sobrepon(ar,n,enlazados):
     aux = [[i[0],i[1],i[2]] for i in ar]
+    ans
     if n == 2:
         return ar[0]
     else :
         arn = aux[n - 1]
+        arn_1 = aux[n - 2]
         aux.pop()
-        enlazados.append(entre(arn,sobrepon(aux,n-1,enlazados)))
+        if entre(arn, arn_1):
+            enlazados.append(arn)
+        else:
+            ans.append(arn_1)
+        sobrepon(aux,n-1,enlazados)
+
+
+print(entre([1,2,4],[1,1,3]))
 """
 aux=[]
 prueba =[['a', 1, 2], ['b', 1, 4],['m', 2, 5], ['c', 1, 5],[6,6,7]]
