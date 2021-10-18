@@ -1,3 +1,6 @@
+import random
+
+
 def mostrar(matriz):
     for fila in matriz:
         for valor in fila:
@@ -128,19 +131,15 @@ def sobrepon(ar, n, enlazados, ans, estado):
                 ans.append(arn)
         sobrepon(aux,n-1,enlazados,ans,estado)
 
-
-
-aux=[]
-new=[]
-prueba =[[0,0,1],['1', 1, 2], ['2', 1, 4],['3', 2, 5], ['4', 1, 5],[5,6,8],[6,7,9],[7,9,10],[8,12,15],[9,14,15],[10,15,18],[10,18,20],[11,19,21]]
-sobrepon(prueba,len(prueba),aux,new,0)
+# aux=[]
+# new=[]
+# prueba =[[0,0,1],['1', 1, 2], ['2', 1, 4],['3', 2, 5], ['4', 1, 5],[5,6,8],[6,7,9],[7,9,10],[8,12,15],[9,14,15],[10,15,18],[10,18,20],[11,19,21]]
+# sobrepon(prueba,len(prueba),aux,new,0)
 # new = [[ 15, 18], [ 9, 10], [ 0, 1]]
 # new.reverse()
 # aux = []
 # print(ingresa([10,"16","17"],new,aux))
-print(new)
-print(aux)
-
-
+# print(new)
+# print(aux)
 
 
