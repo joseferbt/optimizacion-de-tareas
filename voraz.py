@@ -9,7 +9,6 @@ def vorazP2(arr):
     inicio=0
     for x in aux:
         if x[1]>=inicio:
-            #print(x,inicio)
             concat.append(x)
             inicio=x[2]
     return concat
