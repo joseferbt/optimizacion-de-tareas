@@ -32,7 +32,20 @@ def mejor_factibleP2(arr):
             aux_obj=x
     return aux_obj
 
-def solucion(arr):
+def mejor_factibleP1(arr):
+    aux_obj=list()
+    aux=0
+    for x in arr:
+        count=0
+        for y in x:
+            count+=y[2]-y[1]
+        if count>=aux:
+            aux=count
+            aux_obj=x
+    return aux_obj
+
+
+def solucionP2(arr):
     arry=arr
     mergeSort(arry,2)
     ingg=ingenua(arr)
@@ -40,7 +53,16 @@ def solucion(arr):
     sol=mejor_factibleP2(fac)
     return sol
 
+def solucionP1(arr):
+    arry=arr
+    mergeSort(arry,2)
+    ingg=ingenua(arr)
+    fac=factibles(ingg)
+    sol=mejor_factibleP1(fac)
+    return sol
+
 def main():
-    lista=[["a",20,22],["b",11,14],["m",12,19],["c",0,5],["h",6,9],["a",1,2],["b",1,4],["m",2,5],["c",1,5],["h",6,7],["s",9,10],["s",9,11],["r",12,22]]
-    print(solucion(lista))
+    lista=[["a",20,22],["b",11,14],["m",12,19],["0",0,5],["0",3,5],["0",0,1],["0",7,10],["0",15,17] ]
+    (['0', 0, 5], ['0', 7, 10], ['m', 12, 19], ['a', 20, 22])
+    print(solucionP1(lista))
 main()

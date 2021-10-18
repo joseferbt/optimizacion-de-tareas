@@ -107,28 +107,34 @@ def filtarTam(arr):
         new.append([i[0],int(i[1]),int(i[2]),int(i[2])-int(i[1])])
     arr = new
     return arr
-def sobrepon(ar,n,enlazados):
+def sobrepon(ar, n, enlazados, ans, estado):
     aux = [[i[0],i[1],i[2]] for i in ar]
-    ans
-    if n == 2:
-        return ar[0]
-    else :
+    if n == 1:
+        (ans.append(ar[0]),enlazados.append(ar[0]))[estado]
+    else:
         arn = aux[n - 1]
         arn_1 = aux[n - 2]
         aux.pop()
-        if entre(arn, arn_1):
+        if  entre(arn, arn_1):
+            estado = 1
+            print( arn, arn_1, "[x]")
             enlazados.append(arn)
-        else:
-            ans.append(arn_1)
-        sobrepon(aux,n-1,enlazados)
+        else :
+            if estado:
+                print(enlazados[-1], arn, arn_1, "[y]")
+                enlazados.append(arn)
+                estado = 0
+            else :
+                ans.append(arn)
+        print(estado)
+        sobrepon(aux,n-1,enlazados,ans,estado)
 
-
-print(entre([1,2,4],[1,1,3]))
-"""
 aux=[]
-prueba =[['a', 1, 2], ['b', 1, 4],['m', 2, 5], ['c', 1, 5],[6,6,7]]
-print(sobrepon(prueba,len(prueba),aux))
+new=[]
+prueba =[[0,0,1],['1', 1, 2], ['2', 1, 4],['3', 2, 5], ['4', 1, 5],[5,6,8],[6,7,9],[7,9,10],[8,12,15],[9,14,15],[10,15,18]]
+sobrepon(prueba,len(prueba),aux,new,0)
 print(aux)
-"""
+print(new)
+
 
 
