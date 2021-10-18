@@ -110,20 +110,20 @@ def filtarTam(arr):
 def sobrepon(ar, n, enlazados, ans, estado):
     aux = [[i[0],i[1],i[2]] for i in ar]
     if n == 1:
-        (ans.append(ar[0]),enlazados.append(ar[0]))[estado]
+        enlazados.append(ar[0]) if estado else ans.append(ar[0])
     else:
         arn = aux[n - 1]
         arn_1 = aux[n - 2]
         aux.pop()
         if  entre(arn, arn_1):
-            estado = 1
+            estado = True
             print( arn, arn_1, "[x]")
             enlazados.append(arn)
         else :
             if estado:
                 print(enlazados[-1], arn, arn_1, "[y]")
                 enlazados.append(arn)
-                estado = 0
+                estado = False
             else :
                 ans.append(arn)
         print(estado)
@@ -131,8 +131,10 @@ def sobrepon(ar, n, enlazados, ans, estado):
 
 aux=[]
 new=[]
-prueba =[[0,0,1],['1', 1, 2], ['2', 1, 4],['3', 2, 5], ['4', 1, 5],[5,6,8],[6,7,9],[7,9,10],[8,12,15],[9,14,15],[10,15,18]]
+prueba =[[0,0,1],['1', 1, 2], ['2', 1, 4],['3', 2, 5], ['4', 1, 5],[5,6,8],[6,7,9],[7,9,10],[8,12,15],[9,14,15],[10,15,18],[10,18,20],[11,19,21]]
 sobrepon(prueba,len(prueba),aux,new,0)
+aux.reverse()
+new.reverse()
 print(aux)
 print(new)
 

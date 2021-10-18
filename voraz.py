@@ -1,6 +1,6 @@
 from funcionesAux import *
 
-
+# solucion al caso concreto 2 por medio de un algoritmo voraz
 def vorazP2(arr):
     aux=arr
     mergeSort(aux,2)# algoritmo de ordenamiento
