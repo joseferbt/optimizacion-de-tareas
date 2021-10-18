@@ -136,12 +136,10 @@ def imprimir(ax,ay):
 def test(ax,ay,algoritmo):
     for n in range(100,100000,1000):
         entrada=crearEntrada(n)
-        # print(entrada,"[x]")
         start = time()
         algoritmo
         fin = time()
         result= fin- start
-        # ax.append([n,float(" %.10f " % result)])
         ax.append(n)
         ay.append(float(" %.10f " % result))
 def crearEntrada(n):
