@@ -1,14 +1,7 @@
 import random
 
 
-def mostrar(matriz):
-    for fila in matriz:
-        for valor in fila:
-            print("\t", valor, end=" ")
-        print()
-
-
-def printAns(ans, file):
+def printAns1(ans, file):
     aux = 0
     for x in ans:
         aux += int(x[2]) - int(x[1])
@@ -18,8 +11,10 @@ def printAns(ans, file):
         file.write("\n" + x[0])
 
 
-def beneficio(arr):
-    return int(arr[2]) - int(arr[1])
+def printAns2(ans, file):
+    file.write(str(len(ans)))
+    for x in ans:
+        file.write("\n" + x[0])
 
 
 def countSort(arr, horasD, n):
@@ -133,31 +128,45 @@ def imprimir(ax,ay):
     plt.ylabel("Tiempo de respuesta")
     plt.show()
 
-def test(ax,ay,algoritmo):
+def test(ax,ay):
     for n in range(100,100000,1000):
         entrada=crearEntrada(n)
         start = time()
-        algoritmo
+        # colocar algoritmo para la entrada
         fin = time()
         result= fin- start
         ax.append(n)
         ay.append(float(" %.10f " % result))
+    return float(" %.10f " % result)
 def crearEntrada(n):
     salida=[]
     for x in range(0,n):
         hora_final=random.randint(1,24)
         hora_inicio=random.randint(0,hora_final-1)
-        salida.append([":c",hora_inicio,hora_final])
+        salida.append(["A"+str(x),hora_inicio,hora_final])
     return salida
 
-# aux=[]
-# new=[]
-# prueba =[[0,0,1],['1', 1, 2], ['2', 1, 4],['3', 2, 5], ['4', 1, 5],[5,6,8],[6,7,9],[7,9,10],[8,12,15],[9,14,15],[10,15,18],[10,18,20],[11,19,21]]
-# sobrepon(prueba,len(prueba),aux,new,0)
-new = [[0,1],[1,2],[2,3],[3,4],[4,5],[5,6],[6,7],[7,8],[8,9],[9,10],[10,11],[11,12],[12,13],[13,14],[14,15],[15,16],[16,17],[17,18],[19,20],[20,21],[21,22],[22,23],[23,24]]
- # new.reverse()
-aux = []
-# print(new)
-# print(aux)
+def ingenua(arr=list):
+    solucion=[]
+    import itertools
+    for L in range(0, len(arr)+1):
+        for subset in itertools.combinations(arr, L):
+           solucion.append(subset)
+    return solucion
 
+def factibles(arr=list):
+    fac=[]
+    for x in arr:
+        aux=False
+        for y in range(1,len(x)):
+            if x[y][2]>x[y-1][2] and x[y][1]>= x[y-1][2]:
+                continue
+            else:
+                aux=True
+                break
+        if aux:
+            continue
+        else:
+            fac.append(x)
+    return fac
 

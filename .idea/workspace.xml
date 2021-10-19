@@ -1,9 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1c3ba12b-cf72-42c8-a6b6-87d77458dcdc" name="Changes" comment="actualizacion">
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ordenar.py" beforeDir="false" />
+    <list default="true" id="1c3ba12b-cf72-42c8-a6b6-87d77458dcdc" name="Changes" comment="nuevos">
+      <change afterPath="$PROJECT_DIR$/Archivos ing 1/entrada.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Archivos ing 1/entrada1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Archivos ing 1/entrada2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Archivos ing 1/entrada3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Archivos ing 1/salida.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Archivos ing 1/salida1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Archivos ing 1/salida2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Archivos ing 1/salida3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Caso_1_ingenua.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archivos Voraz 1/entrada.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archivos Voraz 1/entrada1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archivos Voraz 1/entrada2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archivos Voraz 1/entrada3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archivos Voraz 1/salida.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archivos Voraz 1/salida1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archivos Voraz 1/salida2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archivos Voraz 1/salida3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archivos Voraz 2/entrada.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archivos Voraz 2/entrada1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archivos Voraz 2/entrada2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archivos Voraz 2/entrada3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archivos Voraz 2/salida.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archivos Voraz 2/salida1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archivos Voraz 2/salida2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archivos Voraz 2/salida3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archivos ing 2/entrada.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archivos ing 2/entrada1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archivos ing 2/entrada2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archivos ing 2/entrada3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archivos ing 2/salida.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archivos ing 2/salida1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archivos ing 2/salida2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archivos ing 2/salida3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caso_1_Voraz.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caso_2_Voraz.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/entrada.txt" beforeDir="false" afterPath="$PROJECT_DIR$/entrada.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/funcionesAux.py" beforeDir="false" afterPath="$PROJECT_DIR$/funcionesAux.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ing.py" beforeDir="false" afterPath="$PROJECT_DIR$/Caso_2_ingenua.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ingenua.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pruebas.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/salida.txt" beforeDir="false" afterPath="$PROJECT_DIR$/salida.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/voraz.py" beforeDir="false" />
     </list>
     <list id="87ac8a25-00fd-4390-9f48-8dcf64001783" name="Changes by hussky" comment="Changes by hussky">
       <change beforePath="$PROJECT_DIR$/funcionesAux.py" beforeDir="false" afterPath="$PROJECT_DIR$/funcionesAux.py" afterDir="false" />
@@ -41,13 +83,33 @@
       <scroll-view-position x="0" y="0" />
     </layout>
   </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/funcionesAux.py">
+      <ranges>
+        <range start1="1" end1="2" start2="1" end2="3" changelist="87ac8a25-00fd-4390-9f48-8dcf64001783" />
+        <range start1="3" end1="11" start2="4" end2="5" changelist="1c3ba12b-cf72-42c8-a6b6-87d77458dcdc" />
+        <range start1="14" end1="14" start2="8" end2="15" changelist="1c3ba12b-cf72-42c8-a6b6-87d77458dcdc" />
+        <range start1="15" end1="16" start2="16" end2="16" changelist="1c3ba12b-cf72-42c8-a6b6-87d77458dcdc" />
+        <range start1="19" end1="23" start2="19" end2="19" changelist="1c3ba12b-cf72-42c8-a6b6-87d77458dcdc" />
+        <range start1="135" end1="136" start2="131" end2="132" changelist="1c3ba12b-cf72-42c8-a6b6-87d77458dcdc" />
+        <range start1="139" end1="140" start2="135" end2="136" changelist="1c3ba12b-cf72-42c8-a6b6-87d77458dcdc" />
+        <range start1="144" end1="144" start2="140" end2="141" changelist="1c3ba12b-cf72-42c8-a6b6-87d77458dcdc" />
+        <range start1="149" end1="150" start2="146" end2="147" changelist="1c3ba12b-cf72-42c8-a6b6-87d77458dcdc" />
+        <range start1="152" end1="161" start2="149" end2="156" changelist="1c3ba12b-cf72-42c8-a6b6-87d77458dcdc" />
+        <range start1="162" end1="162" start2="157" end2="172" changelist="1c3ba12b-cf72-42c8-a6b6-87d77458dcdc" />
+      </ranges>
+    </file>
+  </component>
   <component name="ProjectId" id="1zWNBwRlqKG56oKbWnbU9qE7jaT" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -60,7 +122,51 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.pruebas">
+  <component name="RunManager" selected="Python.caso_1_Voraz">
+    <configuration name="caso_1_Voraz" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Proyecto Fada" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/caso_1_Voraz.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="caso_2_Voraz" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Proyecto Fada" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/caso_2_Voraz.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="funcionesAux" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Proyecto Fada" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -75,28 +181,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/funcionesAux.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="ing" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Proyecto Fada" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ing.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -171,35 +255,13 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="voraz" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Proyecto Fada" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/voraz.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.pruebas" />
-        <item itemvalue="Python.voraz" />
+        <item itemvalue="Python.caso_1_Voraz" />
+        <item itemvalue="Python.caso_2_Voraz" />
         <item itemvalue="Python.funcionesAux" />
+        <item itemvalue="Python.pruebas" />
         <item itemvalue="Python.ingenua" />
-        <item itemvalue="Python.ing" />
       </list>
     </recent_temporary>
   </component>
@@ -333,7 +395,14 @@
       <option name="project" value="LOCAL" />
       <updated>1634594544826</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="nuevos">
+      <created>1634595154646</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1634595154646</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -364,6 +433,7 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="cambio a Python" />
     <MESSAGE value="matrices implementadas" />
     <MESSAGE value="prueba de ingresa()" />
@@ -376,14 +446,16 @@
     <MESSAGE value="crear entrada" />
     <MESSAGE value="cambios" />
     <MESSAGE value="actualizacion" />
-    <option name="LAST_COMMIT_MESSAGE" value="actualizacion" />
+    <MESSAGE value="nuevos" />
+    <option name="LAST_COMMIT_MESSAGE" value="nuevos" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Proyecto_Fada$caso_1_Voraz.coverage" NAME="caso_1_Voraz Coverage Results" MODIFIED="1634608656894" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Proyecto_Fada$ing.coverage" NAME="ing Coverage Results" MODIFIED="1634567032930" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Proyecto_Fada$voraz.coverage" NAME="voraz Coverage Results" MODIFIED="1634588132870" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Proyecto_Fada$voraz.coverage" NAME="caso_2_Voraz Coverage Results" MODIFIED="1634606331212" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Proyecto_Fada$pruebas.coverage" NAME="pruebas Coverage Results" MODIFIED="1634593794367" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Proyecto_Fada$ingenua.coverage" NAME="ingenua Coverage Results" MODIFIED="1634530325203" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Proyecto_Fada$main.coverage" NAME="main Coverage Results" MODIFIED="1634587969902" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Proyecto_Fada$funcionesAux.coverage" NAME="funcionesAux Coverage Results" MODIFIED="1634588050574" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Proyecto_Fada$funcionesAux.coverage" NAME="funcionesAux Coverage Results" MODIFIED="1634595430688" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
